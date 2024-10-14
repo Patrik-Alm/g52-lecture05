@@ -6,21 +6,16 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        String sentence = "Oil and Water";
+        String names = "Carl,Susie,Fredrick,Bob,Erik";
 
-        String oil = sentence.substring(0, 4);
+        String regex = ",";
 
-        String water = sentence.substring(8);
+        String[] myArray = names.split(regex);
 
-        String[] array = {oil, water};
-
-        System.out.println(oil);
-
-        System.out.println(water);
-
-        for (String s : array) {
+        for(String s : myArray) {
             System.out.println(s);
         }
+
 
 
 
