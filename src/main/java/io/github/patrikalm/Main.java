@@ -1,20 +1,17 @@
 package io.github.patrikalm;
 
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
-        String names = "Carl,Susie,Fredrick,Bob,Erik";
+        String line = "ThisShouldBeConverted";
 
-        String regex = ",";
+        char[] charArray = line.toCharArray();
 
-        String[] myArray = names.split(regex);
-
-        for(String s : myArray) {
-            System.out.println(s);
+        for (char i : charArray) {
+            System.out.println(i);
         }
+
 
 
 
